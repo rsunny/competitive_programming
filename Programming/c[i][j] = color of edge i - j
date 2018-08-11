@@ -1,0 +1,26 @@
+int red[n];
+int blue[n];
+
+for(int i = 1; i <= n; ++i) {
+	if(i == 1) {
+		if(rain[1] == 'R')
+			red[n]++;
+		else
+			blue[n]++;
+	}
+	else {
+		red[i] = red[i - 1] + (rain[i] == 'R');
+		blue[i] = blue[i - 1] + (rain[i] == 'B');
+	}
+}
+
+int ans = 0;
+
+for(int i = 1; i <= n; ++i) {
+	for(int j = i; j <= n; ++j) {
+		int red_cnt = red[j] - red[i - 1];
+		int blue_cnt = blue[j] - blue[i - 1];
+		ans = max(ans, abs(rain - bule));
+	}
+}
+print ans

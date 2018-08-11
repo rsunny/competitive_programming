@@ -1,0 +1,18 @@
+You are given n people and m objects. You are also given interest matrix, where interest[i][j] denotes the interest level of j-th person towards i-th object. You are given k pairs of people. For each object we need to assign 2 pairs from the given k pairs. 
+
+We need to maximise the result provided by the following formula: For each object,
+
+i=1
+ Σ max(interest[i][pair1[1]],interest[i][pair1[2]]) * max(interest[i][pair2[1]],interest[i][pair2[2]])
+ m
+
+Note: Person assigned to one object or one pair can't be used for another pair or for another object.
+
+Constraints:
+1 ≤ n ≤ 20
+1 ≤ m ≤ 50
+1 ≤ k ≤ 30
+
+Limits:
+256 MB
+1 Sec

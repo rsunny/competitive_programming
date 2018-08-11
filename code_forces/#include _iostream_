@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int r[n][2];
+
+int main(){
+	int n;
+	cin>>n;
+
+}

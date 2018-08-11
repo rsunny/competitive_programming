@@ -1,0 +1,27 @@
+In a class room there are "n" students. One day the teacher brought "m" different board games to the class. Each student has a particular interest level in each board game.
+
+Each board game requires 2 teams to play it. Each team consists of 2 students. Student pairs up with only few other students. You are given "k" pairs, where each pair can form a possible team. Each student can either be a part of one team and one board game or can be a left over.
+
+Interest level of each team is defined as maximum interest level of the two students in the team. Fun on each board game is defined as product of interest levels of each team playing on that particular board. Fun of the class room is defined as the summation of fun on each board game.
+
+If i-th student is left over with out being assigned to any board game, the fun of the class room decreases by bad[i]. Teacher tries to assign teams to each board game such that she can bring maximum fun to the class. Help her in that assignment and find the maximum fun that can be brought to the class.
+
+Constraints:
+1 ≤ n ≤ 21
+1 ≤ m ≤ 50
+1 ≤ k ≤ 30
+1 ≤ interest[i][j], bad[i] ≤ 1000000
+
+Input Format:
+First line contains 3 space separated integers denoting m, n and k respectively.
+Second line contains n space separated integers, where i-th integer denotes bad[i] of i-th student.
+Next m lines contain n space separated integers, where i-th integer in the j-th line is interest[i][j] which denotes j-th student's interest level in the i-th board game.
+Next k lines contains 2 space separated integers, each line denoting a possible team.
+
+Output Format:
+Print a single integer denoting the maximum fun level that can be brought to the class.
+
+Limits:
+256 MB
+2 Sec
+

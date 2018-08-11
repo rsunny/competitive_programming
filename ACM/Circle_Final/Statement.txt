@@ -1,0 +1,49 @@
+You are given a circle of size 'N'. Circle contains 'N' points numbered from 1 to N on its circumference. 
+
+Now you are struck on the point numbered 'l'. Your can exit from the circle only from point 'r'. In the first step you should jump 1 point. In the second step should jump 2 points. And so on, in the i-th step you should jump 'i' points. 
+
+You can either jump forward or back ward. Eg: If you are on a circle having 10 points, standing on point numbered 3 and you should make the 6th move. Then you can either jump to point number 9 (3+6) or jump to point number 7 (10+3-6). 
+
+You can exit the circle only if you exactly land on point 'r'.
+
+Given number of points the circle is carrying 'N', initial point you are standing 'l' and final point of exit 'r', print a single integer denoting the minimum number of jumps needed to get out of the circle.
+
+Input Format:
+
+First line contains a single integer 'T' denoting number of test cases.
+Next T lines contain #3 space separated integers in each line, denoting N, l, r respectively.
+
+Output Format:
+
+For each test case print a single integer in each line denoting the minimum number of jumps needed to get out of the circle.
+
+Sample Input #00:
+3
+2 1 1
+6 4 1
+3 1 2
+
+Sample Output #00:
+0
+2
+1
+
+Explanation #00:
+In test case 1, 0 jumps are required.
+In test case 2, you need to make 2 jumps, 4 to 3, then 3 to 1.
+In test case 3, you need to make one jump to reach 2 from 1.
+
+Sample Input #01:
+2
+10 1 4
+4 1 3
+
+Sample Output #01:
+2
+3
+
+Explanation #01:
+In test case 1, you need to make 2 jumps. 1 to 2 and then 2 to 4.
+In test case 2, you need to make 3 jumps, 1 to 2, then 2 to 4 and then 4 to 3.
+
+
